@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#E6E6E6"
+    tools:context="com.example.rulamardawi.myapplication.StudentProfile">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tob_bar"
+        android:padding="10dp"
+        android:id="@+id/toplayout"
+        android:orientation="horizontal"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Instructor"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:layout_marginTop="30dp"
+            />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_home_24dp"
+            android:layout_marginRight="10dp"
+            android:onClick="StudentHome"
+            android:gravity="right"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/toplayout"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:id="@+id/imgLayout"
+            >
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:id="@+id/instructorProfilePicture"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/default_profile_picture" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_mode_edit_24dp"
+                android:id="@+id/editImage"
+                android:onClick="editImage"
+                android:clickable="true"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/nameLayout"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/instructorName"
+                    android:text="Instructor Name"
+                    android:textSize="30dp"
+                    android:textColor="#323253"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/bioayout"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:padding="4dp"
+
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ABOUT:"
+                    android:textSize="20dp"
+                    android:textStyle="bold|italic"
+                    android:textColor="#5D646D"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_mode_edit_24dp"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/editBio"
+                    android:clickable="true"
+                    />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/aboutInstructor"
+                android:layout_marginTop="5dp"
+                android:textSize="10dp"
+                android:text="Office number : IT201\nAssistant Professor\nComputer Science Department\nPrincess Sumaya University for Technology\nAmman, Jordan"
+                android:textStyle="italic"
+                android:textColor="#5D646D"
+                android:editable="true"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:gravity="bottom"
+            android:layout_marginBottom="10dp">
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Appointments"
+                android:id="@+id/appointments"
+                android:layout_gravity="center_horizontal"
+                style="@style/DefaultButtonText"
+                android:textColor="#323253"
+                android:onClick="getAppointment"
+                />
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Questions"
+                android:id="@+id/questions"
+                android:layout_gravity="center_horizontal"
+                style="@style/DefaultButtonText"
+                android:textColor="#323253"
+                android:onClick="askQuestion"
+                />
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/published"
+                android:text="Published q and a"
+                android:layout_gravity="center_horizontal"
+                style="@style/DefaultButtonText"
+                android:textColor="#fff"
+                android:background="#323253"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">PSUT Gate</string>
+
+    <style name="DefaultButtonText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#979797</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">10sp</item>
+
+    </style>
+
+    <style name="ScndButtonText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">10sp</item>
+
+    </style>
+
+    <string name="title_activity_login">Login</string>
+
+    <string-array name="mainMenu">
+        <item>Home Page</item>
+        <item>Profile</item>
+        <item>Instructors</item>
+        <item>Clubs</item>
+        <item>Courses</item>
+        <item>Market</item>
+        <item>Lost and found</item>
+        <item>Utilities</item>
+    </string-array>
+    <string name="title_activity_home_page">HomePage</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+</resources>
